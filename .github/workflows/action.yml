@@ -23,5 +23,5 @@ jobs:
           subject: Dalian Weather Report 
           body: file://result.html
           to: yihchu694800687@163.com
-          from: 憨憨
+          from: Joker 
           content_type: text/html
