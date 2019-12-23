@@ -21,6 +21,7 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: Dalian Weather Report
+          body: 早安~ 
           body: file://result.html
           to: yihchu694800687@163.com
           from: GitHub Actions(Joker)
