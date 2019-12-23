@@ -23,5 +23,5 @@ jobs:
           subject: Weather Report(WXY special edition)
           body: file://result.html
           to: yihchu694800687@163.com
-          from: Joker(憨憨)
+          from: 憨憨
           content_type: text/html
