@@ -8,4 +8,5 @@ for line in fileinput.input("result.html", inplace=1):
     else:
         line=line.replace("天氣預報： Dalian",sys.argv[1])
     line=line.replace("body class=\"\"", "body bgcolor=\"#FFFAF0\"")
+    line=line.replace("ffff00", "CD6600")
     print(line,end="")

@@ -22,6 +22,6 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: Dalian Weather Report(妍 SE)
           body: file://result.html
-          to: yihchu694800687@163.com,694800687@qq.com
+          to: yihchu694800687@163.com,yihchu694800687@outlook.com
           from: Joker 
           content_type: text/html
