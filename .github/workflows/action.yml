@@ -1,9 +1,9 @@
 name: Weather Bot(From Joker)
 
 on:
-  push:
-  # schedule:
-  #   - cron: '0 21 * * *'
+  # push:
+  schedule:
+    - cron: '0 21 * * *'
 
 jobs:
   bot:
@@ -22,7 +22,7 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: Dalian Weather Report(WDDSE)
           body: file://result.html
-          # to: yihchu694800687@163.com,18641646723@163.com
-          to: yihchu694800687@163.com
+          to: yihchu694800687@163.com,18641646723@163.com
+          # to: yihchu694800687@163.com
           from: Joker(憨憨) 
           content_type: text/html
