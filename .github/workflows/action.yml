@@ -21,7 +21,7 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: Dalian Weather Report -妍SE
-          body: file://result.html
+          body: file://Dalian.png
           # to: yihchu694800687@163.com,18641646723@163.com
           to: yihchu694800687@163.com
           from: Joker(憨憨) 
