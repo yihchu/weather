@@ -20,7 +20,7 @@ jobs:
           server_port: 465
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
-          subject: 吴呆呆亲启
+          subject: Calendar Phrases
           body: file://result.html
           # to: yihchu694800687@163.com,18641646723@163.com
           to: yihchu694800687@163.com
