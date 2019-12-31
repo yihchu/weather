@@ -6,10 +6,12 @@ UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Ge
 oneLine=$(curl \
   -H "Accept-Language: $LANGUAGE" \
   -H "User-Agent: $UA" \
-  -o result.html \
   zh-tw.wttr.in/$CITY?format=3)
 # oneLine=$(curl zh-tw.wttr.in/$CITY?format=3)
-wget zh-tw.wttr.in/$CITY.png
+wget \
+  -H "Accept-Language: $LANGUAGE" \
+  -H "User-Agent: $UA" \
+  zh-tw.wttr.in/$CITY.png
 
 json=$(curl https://rest.shanbay.com/api/v2/quote/quotes/today/)
 author=$(echo $json | python3 -c "import sys, json; print(json.load(sys.stdin)['data']['author'])")
