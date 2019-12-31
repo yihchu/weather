@@ -1,8 +1,8 @@
 
 CITY=Dalian
 
-oneLine=$(curl wttr.in/$CITY?format=3)
-wget wttr.in/$CITY.png
+oneLine=$(curl zh.wttr.in/$CITY?format=3)
+wget zh.wttr.in/$CITY.png
 
 json=$(curl https://rest.shanbay.com/api/v2/quote/quotes/today/)
 author=$(echo $json | python3 -c "import sys, json; print(json.load(sys.stdin)['data']['author'])")
