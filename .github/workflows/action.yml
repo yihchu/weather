@@ -1,7 +1,7 @@
 name: Weather Bot(From Joker)
 
 on:
-  # push:
+  push:
   schedule:
     - cron: '0 21 * * *'
 
