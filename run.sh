@@ -1,6 +1,6 @@
 
 # CITY=Dalian
-CITY=Jinzhou
+CITY=Dalian
 
 oneLine=$(curl wttr.in/$CITY?format=3\&m)
 
