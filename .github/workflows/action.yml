@@ -1,7 +1,7 @@
 name: Weather Bot(From Joker)
 
 on:
-  push:
+    # push:
   schedule:
     - cron: '30 21 * * *'
 
@@ -22,7 +22,7 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: 吴小妍的天气预报
           body: file://result.html
-          # to: yihchu694800687@163.com,18641646723@163.com
-          to: yihchu694800687@163.com
+          to: yihchu694800687@163.com,18641646723@163.com
+          # to: yihchu694800687@163.com
           from: 憨憨 
           content_type: text/html
